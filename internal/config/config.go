@@ -9,7 +9,7 @@ import (
 )
 
 type HTTPServer struct {
-	Addr string
+	Addr string `yaml:"address" env-required:"true"` // env-default:":8080"`
 }
 
 // HTTPServer represents the configuration for the HTTP server.
